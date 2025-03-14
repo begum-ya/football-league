@@ -127,3 +127,17 @@ npm run dev
 
 ---
 
+## 🧪 Running Tests (PHP/Laravel)
+This project includes **unit tests and feature tests** to ensure the correctness of the API.
+
+### 1️⃣ Set Up Test Database
+Modify your `.env.testing` file:
+```env
+DB_DATABASE=football_db_testing
+DB_USERNAME=root
+DB_PASSWORD=
+
+```sh
+php artisan migrate --env=testing
+php artisan test
+```
